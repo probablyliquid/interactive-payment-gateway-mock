@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@400;500;600;700;800&family=Source+Code+Pro:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive Payment Gateway</title>
+    <meta
+      name="description"
+      content="A solution to a Frontend Mentor Challenge to design an interactive card payment gateway!"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="left-div">
+      <div class="both-faces-preview">
+        <div class="top-face-card-preview">
+          <img src="images/card-logo.svg" alt="card logo" class="card-logo" />
+          <p class="card-number-prv" id="card-number-prv">
+            1234 5678 9123 0000
+          </p>
+          <p class="cardholder-name-prv" id="cardholder-name-prv">
+            JANE APPLESEED
+          </p>
+          <div class="dates-prv">
+            <p class="exp-date-prv" id="exp-month-prv">MM</p>
+            <p>&nbsp;/&nbsp;</p>
+            <p class="exp-date-prv" id="exp-year-prv">YY</p>
+          </div>
+        </div>
+        <div class="bottom-face-card-preview">
+          <p class="cvc-prv" id="cvc-prv">CVC</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-div">
+      <div class="card-details-container" id="card-details-container">
+        <div class="cardholder-name">
+          <p class="input-tags">CARDHOLDER NAME</p>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            id="name-input"
+          />
+          <p class="hidden-error-text" id="name-error"></p>
+        </div>
+        <div class="card-number">
+          <p class="input-tags">CARD NUMBER</p>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            id="cardnumber"
+          />
+          <p class="hidden-error-text" id="card-number-error"></p>
+        </div>
+        <div class="date-cvc">
+          <div class="exp-date">
+            <p class="input-tags">EXPIRY DATE (MM/YY)</p>
+            <input type="text" placeholder="MM" class="date-input" id="month" />
+            <input type="text" placeholder="YY" class="date-input" id="year" />
+            <p class="hidden-error-text" id="expdate-error"></p>
+          </div>
+          <div class="cvc-input">
+            <p class="input-tags">CVC</p>
+            <input type="text" placeholder="eg. 123" id="cvc-input" />
+            <p class="hidden-error-text" id="cvc-error"></p>
+          </div>
+        </div>
+        <div class="confirm-button">
+          <button class="confirm-btn" id="confirm-btn">Confirm</button>
+          <p class="hidden-error-text" id="confirm-error"></p>
+        </div>
+      </div>
+      <div class="confirmed-page" id="confirmed-page">
+        <img src="images/icon-complete.svg" alt="tick mark" />
+        <h1>Thank You!</h1>
+        <p id="thanks-text">We've added your card details</p>
+        <p id="note">
+          (P.S. This website is incapable of storing any data from the user
+          after refreshed. No data was captured)
+        </p>
+      </div>
+      <div class="footer">
+        <p id="footer">
+          Website built by
+          <a href="https://github.com/probablyliquid">Priyanshu Volvotkar</a>.
+          Assets and Challenge from
+          <a href="https://www.frontendmentor.io">Frontend Mentor</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
