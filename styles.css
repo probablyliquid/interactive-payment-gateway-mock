@@ -132,7 +132,6 @@ body {
   margin-bottom: 8px;
   margin-top: 20px;
   color: rgb(31, 11, 46);
-  position: absolute;
 }
 #name-input {
   font-family: "Space Grotesk", sans-serif;
@@ -369,7 +368,6 @@ a {
     margin-bottom: 8px;
     margin-top: 20px;
     color: rgb(31, 11, 46);
-    position: absolute;
   }
 }
 
@@ -472,6 +470,5 @@ a {
     margin-bottom: 8px;
     margin-top: 20px;
     color: rgb(31, 11, 46);
-    position: absolute;
   }
 }
