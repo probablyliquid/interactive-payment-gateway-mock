@@ -241,3 +241,8 @@ function checkDetails(){
         confirmError.textContent = "Please see that all fields are filled correctly"
     }
 }
+
+// Changing input position for virtual keyboard:
+if (document.getElementsByClassName("input-tags") == document.activeElement) {
+    document.getElementById("input-tags").class += "absolute"
+}
