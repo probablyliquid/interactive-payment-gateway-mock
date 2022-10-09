@@ -6,6 +6,7 @@ body {
   justify-content: space-between;
   height: 100vh;
 }
+
 .left-div {
   display: flex;
   flex-direction: column;
@@ -350,5 +351,112 @@ a {
     color: #2f2f2f;
     font-size: 16px;
     font-weight: 700;
+  }
+  .confirmed-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 200px;
+  }
+}
+
+/* For phones: 480px */
+@media screen and (max-width: 480px) {
+  body {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .left-div {
+    display: flex;
+    height: 240px;
+    width: 100%;
+    background-image: url("images/bg-main-mobile.png");
+    object-fit: cover;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+  .both-faces-preview {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    transform: scale(0.8);
+  }
+  .top-face-card-preview {
+    background-image: url("images/bg-card-front.png");
+    position: absolute;
+    top: 110px;
+    right: 25px;
+    width: 447px;
+    height: 245px;
+    margin-left: 0px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 40px #2f2f2f;
+    z-index: 1;
+  }
+  .bottom-face-card-preview {
+    position: relative;
+    left: 15px;
+    bottom: 1px;
+    background-image: url("images/bg-card-back.png");
+    width: 447px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    height: 245px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 40px #2f2f2f;
+  }
+  .right-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 480px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-details-container {
+    position: absolute;
+    left: 65px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 600px;
+    visibility: visible;
+  }
+  .footer {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    font-size: 10px;
+    width: 400px;
+  }
+  .confirmed-page {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 65px;
   }
 }
